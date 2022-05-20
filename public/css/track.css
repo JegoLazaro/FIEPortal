@@ -1,0 +1,70 @@
+/*
+
+Product Admin CSS Template
+
+https://templatemo.com/tm-524-product-admin
+
+*/
+
+  .tm-bg-primary-dark {
+    background-color: #e250112d;
+  }
+
+  .tm-block {
+    padding: 40px;
+    -webkit-box-shadow: 1px 1px 5px 0 #e250112d;
+    -moz-box-shadow: 1px 1px 5px 0 #e250112d;
+    box-shadow: 1px 1px 5px 0 #e250112d;
+    min-height: 350px;
+    height: 100%;
+    max-height: 450px;
+  }
+
+  .tm-block-taller {
+    max-height: 520px;
+  }
+
+  .tm-block-scroll {
+    overflow-y: scroll;
+  }
+
+  .tm-block-title {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 30px;
+  }
+
+  .table {
+    background-color: #ff7d32;
+    font-family: 'Comfortaa';
+    color: #fff;
+    font-size: 85%;
+    margin-bottom: 0;
+  }
+
+  .tm-status-circle {
+    display: inline-block;
+    margin-right: 5px;
+    vertical-align: middle;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    margin-top: -3px;
+  }
+
+  .moving {
+    background-color: #9be64d;
+    box-shadow: 0 0 8px #9be64d, inset 0 0 8px #9be64d;
+  }
+
+  .cancelled {
+    background-color: #da534f;
+    box-shadow: 0 0 8px #da534f, inset 0 0 8px #da534f;
+  }
+
+  .pending {
+    background-color: #efc54b;
+    box-shadow: 0 0 8px #efc54b, inset 0 0 8px #efc54b;
+  }
+

@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500&family=Montserrat:wght@100&family=Pangolin&family=Roboto:wght@300;400&display=swap');
+.body {
+    font-family: Comfortaa, sans-serif;
+}
+
+.left-content {
+    width: 350px;
+}
+
+.image {
+    max-width: 100%;
+    max-height: 100%;
+    zoom: 26%;
+}
+
+.center-content {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    width: 500px;
+    height: 320px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 15px;
+    background-color: #fafafa;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.right-content {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 300px;
+    padding: 10px;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+}
+
+.font {
+    font-family: Comfortaa, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    padding: 3px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-left: 20px;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 11px;
+    width: 12em;
+}
+
+p.text {
+    display: block;
+}
+
+a.link {
+    font-style: normal;
+    color: darkslateblue;
+    text-align: center;
+}
+
+a:visited {
+    color: black;
+    font-style: normal;
+}
+
+.logo {
+    width: 50%;
+    height: auto;
+    display: block;
+    margin-top: 10%;
+    margin-left: 20%;
+    margin-right: auto;
+}
+
+a {
+    color: #0060B6;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #00A0C6;
+    text-decoration: none;
+}
+
+.form-2 {
+    margin-left: 10px;
+}
+
+.title {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}

@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+
+.border {
+    position: relative;
+    width: 45em;
+    height: 28em;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    overflow: hidden;
+    margin-top: 10%;
+
+    background: #FDFDFD;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 9px;
+    
+    }
+    
+    @media only screen and( max-width: 500px ) {
+        .border {
+        position: relative;
+        width: 45em;
+        height: 28em;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        overflow: hidden;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 9px;
+        
+    }
+}
+
+.back-button{
+    position: absolute;
+    width: 56px;
+    background-color: white;
+    border: none;
+    top: 15px;
+    margin-top: 1px;
+    margin-left: 50%;
+}
+.side_picture{
+    position: relative;
+    width: 50%;
+    height: 100%;
+    mix-blend-mode: normal;
+    backdrop-filter: blur(4px);
+    /* Note: backdrop-filter has minimal browser support */
+
+    border-radius: 9px;
+}
+
+.logo{
+    position: relative;
+    max-width: 80%;
+    margin-left: 10%;
+    height: auto;
+    margin-top: 0;
+    float: right;
+    border: white;
+    margin-top: 3em;
+}
+
+.user_border{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-left: 15%;
+    margin-bottom: 0;
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.user{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-top: 30%;
+    max-height: 100%;
+    max-width: 100%;
+    justify-content: center;
+
+    font-family: Comfortaa;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 16px;
+    text-align: center;
+
+    color: #000000;
+
+    background: #FDFDFD;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border: 4px;
+    border-radius: 18px;
+}

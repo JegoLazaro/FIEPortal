@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+.page {
+    display: flex;
+    justify-content: center;
+}
+
+.border_registration {
+    position: relative;
+    width: 40em;
+    height: 45em;
+    background: #FDFDFD;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 9px;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    margin-top: .5em;
+    z-index: 0.9;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0;
+}
+
+.logo {
+    max-width: 100%;
+    height: auto;
+    margin: auto;
+    margin-bottom: 1em;
+}
+
+.logo-div {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2.5em;
+    margin-bottom: 0;
+}
+
+.form-title {
+    font-family: Comfortaa;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 20px;
+    text-align: center;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.input-long {
+    position: relative;
+    width: 27em;
+    height: 1.1em;
+    font-family: Comfortaa;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    color: #000000;
+    margin-top: 2.5em;
+    margin-left: 1.5em;
+}
+
+.input-short {
+    position: relative;
+    width: 12.5em;
+    height: 1.1em;
+    margin-top: 2.5em;
+    font-family: Comfortaa;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    color: #000000;
+    margin-left: 1.5em;
+}
+
+.form-proper {
+    display: flex;
+    flex-flow: column;
+    flex-grow: 3;
+    margin-left: 7em;
+}
+
+.name {
+    display: inline;
+}
+
+.location, contact {
+    display: inline;
+}
+
+.round-border {
+    background: #FDFDFD;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 11px;
+    border: 1px #000;
+}
+
+.role {
+    margin-top: 2.5em;
+    font-weight: bold;
+}
+
+.buttons {
+    margin-top: 3.5em;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-evenly;
+    width: 7em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2.5em;
+}
+
+.cancel {
+    margin-top: 1em;
+    font-weight: bold;
+    font-family: Comfortaa;
+    font-style: normal;
+    font-size: 14px;
+    text-align: center;
+}
+
+.register {
+    font-weight: bold;
+    font-family: Comfortaa;
+    font-style: normal;
+    font-size: 14px;
+}
+
+input:focus {
+    outline: none;
+    border-bottom: 2px solid rgb(34, 193, 195);
+    font-weight: 700px;
+}
+
+button:hover {
+    color: #00A0C6;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #0060B6;
+    text-decoration: none;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}

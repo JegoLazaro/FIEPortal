@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Comfortaa';
+  color: rgb(0, 0, 0);
+  background-color: rgb(240, 240, 240);
+  margin: 0;
+  padding: 0;
+}
+
+.main-container {
+  max-width: 1200px;
+  height: auto;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 2.7fr 1.3fr;
+}
+
+.section {
+  /* border: 1px solid green; */
+  font-family: 'Comfortaa';
+  display: flex;
+  flex-direction: column;
+  max-height: 100vh;
+}
+
+/* ------------------- Product ------------------- */
+
+.section-title {
+  font-family: 'Comfortaa';
+  text-align: center;
+  margin-left: 0.3em;
+  margin-right: 0.3em;
+  border-bottom: 2px solid rgb(0, 0, 0);
+}
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.product {
+  font-family: 'Comfortaa';
+  border: 2.8px solid rgba(0, 0, 0, 0);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0.5em;
+  padding: 0.8em 0.4em;
+  width: 32%;
+}
+
+.product:hover {
+  border: 2.8px solid #F86121;
+  transition: 0.5s;
+}
+
+.product-name {
+  font-family: 'Comfortaa';
+  width: 100%;
+  border-bottom: 2px solid #000000;
+  text-align: center;
+}
+
+.product-price{
+  font-family: 'Comfortaa';
+  width: 100%;
+  text-align: center;
+}
+
+.product-price::before {
+  font-family: 'Comfortaa';
+  content: "Php ";
+}
+
+.product img {
+  height: 120px;
+  width: 120px;
+  object-fit: cover;
+}
+
+.btn {
+  padding: 0.6em 1.1em;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  color: #ffffff;
+}
+
+:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  background: #F86121;
+}
+
+.btn-primary {
+  background-color: #F86121;
+}
+
+.btn-primary:hover {
+  border: 2px solid #F86121;
+  color: #F86121;
+  transition: 0.3s;
+  background: none;
+}
+
+/* ------------------- Cart ------------------- */
+
+.cart {
+  font-family: 'Comfortaa';
+  font-style: italic;
+  font-weight: lighter;
+  display: grid;
+}
+
+.cart-item {
+  font-family: 'Comfortaa';
+  display: grid;
+  grid-template-columns: 2em 2em 2em auto 2em auto auto;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  border-bottom: 2px dashed rgb(0, 0, 0);
+}
+
+.cart-item-name {
+  font-size: 1em;
+
+}
+
+.cart-item-price::before {
+  content: "Php ";
+}
+
+
+.btn-small {
+  padding: 0.2em 0.6em;
+}
+
+.cart-footer {
+  text-align: center;
+}
+
+.cart-footer-total {
+  font-size: 1.4em;
+}
+
+.cart-footer-total-php::before {
+  
+  content: "Total: Php ";
+}
+
+.cart-footer-total-qty::before {
+  content: "Total Quantity: ";
+}

@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+
+
+.border_edituser{
+    position: relative;
+    width: 40em;
+    height:55em;
+
+    background: #FDFDFD;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 9px;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    margin: auto;
+    margin-top: 1em;
+    z-index: 0.9;
+}
+
+.logo{
+    max-width: 100%;
+    height: auto;
+    margin: auto;
+}
+.logo-div{
+    margin-left: auto;
+    margin-right: auto;
+}
+.form-title{
+    margin-top: -8em;
+    font-family: Comfortaa;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 20px;
+    text-align: center;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.input-long{
+    position: relative;
+    width: 60%;
+    height: 20%;
+    
+    margin-top: 1em;
+
+    font-family: Comfortaa;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    margin-left: 9em;
+  
+    color: #000000;
+
+}
+
+.input-short{
+    position: relative;
+    width: 70%;
+    height: 20%;
+
+    margin-top: 1em;
+    font-family: Comfortaa;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    
+    
+    color: #000000;
+
+}
+
+.city{
+    margin-left: 3.5em;
+    width: 65%;
+    height: 20%;
+}
+
+
+.phonenumber{
+    margin-left: 9em;
+    width: 60%;
+    height: 20%;
+    text-align: center;
+}
+
+.role{
+    margin-left: 9em;
+    width: 60%;
+    height: 20%;
+    text-align: center;
+}
+
+.change_password{
+    margin-left: 2.5em;
+    display: flex;
+    flex-flow:row;
+    flex-grow: 3;
+    justify-content: space-evenly;
+}
+
+.details{
+    margin-top: 1em;
+    font-weight: bold;
+    font-family: Comfortaa;
+    font-style: normal;
+    font-size: 14px;
+    text-align: center;
+
+}
+
+.firstname{
+    margin-left: 2.5em;
+}
+
+.new_password{
+    width: auto;
+}
+.details-lastname{
+    margin-top: 1em;
+    font-weight: bold;
+    font-family: Comfortaa;
+    font-style: normal;
+    font-size: 14px;
+    text-align: center;
+    margin-right: 4em;
+}
+
+.details-postal{
+    margin-top: 1em;
+    font-weight: bold;
+    font-family: Comfortaa;
+    font-style: normal;
+    font-size: 14px;
+    text-align: center;
+    margin-right: 4em;
+}
+
+a:hover {
+    cursor:pointer;
+}
+
+.lastname{
+    margin-left: -1em;
+    width: 90%;
+    height: 20%;
+}
+
+.form-proper{
+    display: flex;
+    flex-flow: column;
+    flex-grow: 3;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.name{
+    display: flex;
+    flex-flow:row;
+    flex-grow: 3;
+    justify-content: space-evenly;
+
+}
+
+.location{
+    display: flex;
+    flex-flow:row;
+    flex-grow: 3;
+    justify-content: space-evenly;
+}
+
+.round-border{
+    background: #FDFDFD;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 11px;
+    border: 1px #000;
+}
+.role{
+    font-weight: bold;
+}
+.buttons{
+    margin-top: 2.5em;
+    display:flex;
+    flex-flow: column;
+    justify-content: space-around;
+    width: 7em;
+    margin: auto;
+}
+.edit{
+    margin-top: 1em;
+    font-weight: bold;
+    font-family: Comfortaa;
+    font-style: normal;
+    font-size: 14px;
+    text-align: center;
+}
+
+.complete{
+    margin-top: 3em;
+    font-weight: bold;
+    font-family: Comfortaa;
+    font-style: normal;
+    font-size: 14px;
+    text-align: center;
+
+}
+
+.cancel{
+    margin-top: 1.5em;
+    font-weight: bold;
+    font-family: Comfortaa;
+    font-style: normal;
+    font-size: 14px;
+    text-align: center;
+}
+
+.delete{
+    margin-top: 1.5em;
+    font-weight: bold;
+    font-family: Comfortaa;
+    font-style: normal;
+    font-size: 14px;
+    text-align: center;
+
+}
+
+.change_pw{
+    margin-top: 1.5em;
+    font-weight: bold;
+    font-family: Comfortaa;
+    font-style: normal;
+    font-size: 14px;
+    text-align: center;
+
+}
+
+button:hover {
+    color: #00A0C6;
+    text-decoration: none;
+}
+
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0;
+}
+
+

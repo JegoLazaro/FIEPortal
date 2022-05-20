@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500&family=Montserrat:wght@100&family=Pangolin&family=Roboto:wght@300;400&display=swap');
+@import url('https://www.w3schools.com/w3css/4/w3.css');
+@import url('https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css');
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+body{
+    font-family: Comfortaa, sans-serif;
+    resize: both;
+}
+
+.mynav{
+height: 70px;
+background: #F86121;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.text{
+position: absolute;
+width: 326px;
+height: 40px;
+left: -70px;
+top: 18px;
+font-family: Arial;
+font-style: normal;
+font-weight: bold;
+line-height: 41px;
+text-align: center;
+
+color: #000000;
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+div.left{
+    position: fixed;
+    width: 192px;
+    height: 100%;
+    padding: 0%;
+    left: 0px;
+    top: 75px;
+    z-index: 1;
+    overflow-x: hidden;
+    background: rgba(0, 0, 0, 0.07);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 9px;
+}
+
+.mylogo{
+position: absolute;
+width: 118px;
+height: 90px;
+left: 35px;
+top: 20px;
+}
+
+.sidemenu{
+    padding-left: 10%;
+    padding-top: 30%;
+    font-family: Comfortaa;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    color: #8b8181;
+    display: block;
+}
+
+div.right{
+    position: fixed;
+    display: flex;
+    flex-direction:row;
+    z-index: 1;
+    width: 100%;
+    height: auto;
+    left: 235px;
+    top: 75px;
+}
+
+.label{
+position: absolute;
+width: 204px;
+height: 46px;
+left: auto;
+top: 65px;
+
+font-family: Comfortaa;
+font-style: normal;
+font-weight: bold;
+font-size: 36px;
+line-height: 40px;
+text-align: center;
+
+color: #000000;
+}
+
+.commissary{
+    margin-bottom: 5%;
+}
+
+.reccondiments{
+position: absolute;
+width: 265px;
+height: 142px;
+left: auto;
+top: 241px;
+
+background: url(../Pictures/condiments.jpg);
+border-radius: 9px;
+}
+
+.recsupplies{
+position: absolute;
+width: 265px;
+height: 142px;
+left: auto;
+top: 241px;
+
+background: #C4C4C4;
+border-radius: 9px;
+}
+
+.rectext{
+position: absolute;
+width: 154px;
+height: 35px;
+left: 293px;
+top: 326px;
+
+font-family: Comfortaa;
+font-style: normal;
+font-weight: bold;
+font-size: 20px;
+line-height: 22px;
+text-align: center;
+
+color: #000000;
+}
+
+table {
+    display: block;
+    overflow-x: auto;
+    height: 85vh;
+    white-space: nowrap;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0;
+}
+
+td input{
+    background: transparent;
+    text-overflow: ellipsis;
+    width: auto;
+    border: 1px solid black;
+}
+
+td input[type="number"]{
+    text-align: right;
+    width: 100%;
+}
+
+td{
+    border: none;
+}
+
+input:read-only{
+    border: none;
+}
+
+thead th{
+    position: sticky;
+    top: 0;
+    background-color: white;
+    background: white;
+    z-index: 200;
+    opacity: 1;
+}
