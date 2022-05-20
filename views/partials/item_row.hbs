@@ -1,0 +1,54 @@
+    <tr>
+        {{#if available}}
+        <td class="availability fas fa-eye"></td>
+        {{else}}
+        <td class="availability far fa-eye-slash"></td>
+        {{/if}}
+        <td class="itemName"><input class="name_input" type="text" readonly value="{{itemName}}"></td>
+        {{!-- <td><input list="types" readonly size="15" value="{{itemType}}"></td>
+        <datalist id="types">
+            <option value="Condiments"/>
+            <option value="Supplies"/>
+            <option value="Pasalubong"/>
+            <option value="Cooking Supplies"/>
+            <option value="Market Item"/>
+            <option value="Drinks"/>
+            <option value="Frozen Goods"/>
+        </datalist> --}}
+        <td><select disabled>
+            <option value="Condiments" {{#ifeq itemType "Condiments"}} selected {{/ifeq}} >Condiments</option>
+            <option value="Supplies" {{#ifeq itemType "Supplies"}} selected {{/ifeq}} >Supplies</option>
+            <option value="Pasalubong" {{#ifeq itemType "Pasalubong"}} selected {{/ifeq}} >Pasalubong</option>
+            <option value="Market Item" {{#ifeq itemType "Market Item"}} selected {{/ifeq}} >Market Item</option>
+            <option value="Drinks" {{#ifeq itemType "Drinks"}} selected {{/ifeq}} >Drinks</option>
+            <option value="Cooking Supplies" {{#ifeq itemType "Cooking Supplies"}} selected {{/ifeq}} >Cooking Supplies</option>
+            <option value="Frozen Goods" {{#ifeq itemType "Frozen Goods"}} selected {{/ifeq}} >Frozen Goods</option>
+        </select></td>
+        <td class="itemPrice"><input type="number" readonly value="{{itemPrice}}"></td>
+        <td class="beginningValue"><input type="number" readonly value="{{beginningValue}}"></td>
+        <td class="delivery"><input type="number" readonly value="{{delivery}}"></td>
+        <td class="totalStart"><input type="number" readonly value="{{totalStart}}"></td>
+        <td class="totalReleased"><input type="number" readonly value="{{totalReleased}}"></td>
+        <td class="pullout"><input type="number" readonly value="{{pullout}}"></td>
+        <td class="end"><input type="number" readonly value="{{end}}"></td>
+        <td class="physicalCount"><input type="number" readonly value="{{physicalCount}}"></td>
+        <td class="difference"><input type="number" readonly value="{{difference}}"></td>
+        <td class="match"><input type="text" size="3" readonly value="{{#if match}}YES{{else}}NO{{/if}}"></td>
+
+
+        <td class="_id" style="display:none;">{{_id}}
+        <input name="itemId" type="hidden" id="itemId" value="{{_id}}">
+        </td>
+        {{#if quantities}}
+            {{#each quantities.branch}}
+                <td class="{{this}}"><input type="number" readonly value="{{lookup ../quantities.quantity @index}}"></td>
+            {{/each}}
+        {{/if}}
+        <td class="notes"><input type="text" readonly value="{{notes}}"></td>
+        <td>
+        <span class="table-remove glyphicon glyphicon-remove"></span>
+        </td>
+        <td>
+        <button class="table-edit "style="border: none;">Edit</button>
+        </td>
+    </tr>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/manage_users.css">
+    <title> Manage Users </title>
+</head>
+<body  class="background">
+    
+    {{>header}}
+
+    <div class="border">
+        <img class="side_picture" src="/pictures/ilocos-empanada 1.png"/>
+        <button class="back-button" ><a href="/home" style="text-decoration: none;"><img src="/pictures/arrow.png"></a></button>
+        <div class="user_border">
+            <img class="logo" src="/pictures/Circle Logo.png"/>
+            <div>
+                <a class="user" href={{hrefcoadmin}} style="text-decoration:none">Co-Administrator</a>
+                <a class="user" href={{hreffranch}} style="text-decoration:none">Franchisee</a>
+                <a class="user" href={{hrefcomm}} style="text-decoration:none">Commissaries</a>
+            </div>
+        </div> 
+    </div>
+</body>
+</html>

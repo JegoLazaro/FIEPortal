@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/edit_password_page.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/popups.css">
+    <title> Edit Password </title>
+</head>
+
+<body class="background">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript" src="/js/change_password.js"></script>
+    <div class="backdrop" id="backdrop"></div>
+    <div class="page">
+        <div class="center-content">
+            <div class="logo-div">
+                <img class="logo" src="/pictures/Circle Logo.png">
+            </div>
+            <div class="form-div">
+                <div class="form-title">
+                    <span>CHANGE PASSWORD</span>
+                </div>
+                <form class="form-proper" id="password-form-proper" method="POST">
+                    <input name="new_pw" id="new_pw" class="new_pw round-border input-long" type="password" placeholder="Enter new password" > 
+                    <input name="confirm_new_pw" id="confirm_new_pw" class="confirm_new_pw round-border input-long" type="password" placeholder="Re-enter new password" >  
+                    <div class="buttons">
+                        <a class="change round-border" id="change" >SAVE</a>
+                    </div>
+                </form>
+             </div>                      
+        </div>
+    </div>
+    {{>popup}}    
+</body>
+
+</html>

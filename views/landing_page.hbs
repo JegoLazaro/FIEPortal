@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="/css/landing_page.css">
+    <link rel="stylesheet" href="/css/header.css">
+    <title>{{userType}} Landing Page </title>
+</head>
+
+<body class="background">
+        {{>header}}
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+    <script type="text/javascript">
+        
+    </script>
+
+    <div class="center-content">
+        <div class="left-content">
+            <img class="leftpic" src="/pictures/ilocos-empanada 1.png" />
+        </div>
+        <div class="right-content">
+            <div>
+                <img class="logo" src="/pictures/Circle Logo.png">
+                <div class="buttons" style="margin-top: 10%;"> 
+                    <button class="font"><a href="/manage-account-create">CREATE USER</a></button>
+                    <button class="font"><a href="/manage-account-view">MANAGE ACCOUNT</a></button>
+                    {{#ifeq userType "Master Admin"}}
+                        <button class="font"><a href="/user/{{userId}}">VIEW PROFILE</a></button>
+                    {{/ifeq}}
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

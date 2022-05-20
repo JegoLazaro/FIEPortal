@@ -1,0 +1,34 @@
+
+<div class="notif" id="popup">
+    <div class="popup-text" id="popup-text">{{{popupText}}}</div>
+    <div class="buttons-popup">
+        <a id="left-button-href" href={{leftButtonhref}}><button class="button-popup button-border" id="left-button">{{leftButtonText}}</button></a>
+        <button class="button-popup button-border" id="right-button"><a id="right-button-href" href={{rightButtonhref}}>{{rightButtonText}}</button></a>
+    </div>
+</div>
+
+<div class="notif" id="confirmpopup">
+    <div class="popup-text" id="popup-text">{{confirmPopupText}}</div>
+    <div class="buttons-popup">
+        <!--<button class="button-popup button-border" id="delete-left-button"><a href={{deleteleftButtonhref}}>{{deleteleftButtonText}}</button></a>-->
+        <a id="left-confirm-href" href={{confirmleftButtonhref}}><button class="button-popup button-border" form={{formConfirmSubmit}} type="submit" id="confirm-left-button">{{confirmleftButtonText}}</button></a>
+        <a id="right-confirm-href" href={{confirmrightButtonhref}}><button class="button-popup button-border" id="confirm-right-button">{{confirmrightButtonText}}</button></a>
+    </div>
+</div>
+
+<div class="notif" id="cancelpopup">
+    <div class="popup-text" id="popup-text">{{cancelPopupText}}</div>
+    <div class="buttons-popup">
+        <a id="left-cancel-href" href={{cancelleftButtonhref}}><button class="button-popup button-border" id="cancel-left-button">{{cancelleftButtonText}}</button></a>
+        <a id="right-cancel-href"href={{cancelrightButtonhref}}><button class="button-popup button-border" id="cancel-right-button">{{cancelrightButtonText}}</button></a>
+    </div>
+</div>
+
+<div class="notif" id="deletepopup">
+    <div class="popup-text" id="popup-text">{{deletePopupText}}</div>
+    <div class="buttons-popup">
+        <!--<button class="button-popup button-border" id="delete-left-button"><a href={{deleteleftButtonhref}}>{{deleteleftButtonText}}</button></a>-->
+        <a id="left-delete-href" href="/delete/{{userId}}"><button class="button-popup button-border" id="delete-left-button">{{deleteleftButtonText}}</button></a>
+        <a id="right-delete-href" href={{deleterightButtonhref}}><button class="button-popup button-border" id="delete-right-button">{{deleterightButtonText}}</button></a>
+    </div>
+</div>

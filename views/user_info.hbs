@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/css/user_info.css">
+    <link rel="stylesheet" href="/css/header.css">
+    <title> User Info </title>
+</head>
+<body class="background">
+    {{>header}}
+    <div class="page">
+        <div class="border_viewuser">
+
+                {{#ifeq userType "Master Admin"}}
+                    <button class="back-button" ><a href="/home" style="text-decoration: none;"><img src="../../pictures/arrow.png"></a></button>
+                {{/ifeq}}
+
+                {{#ifnoteq userType "Master Admin"}} 
+                    <button class="back-button" ><a href="/viewUsers/{{userType}}" style="text-decoration: none;"><img src="../../pictures/arrow.png"></a></button>
+                {{/ifnoteq}}
+                <div class="logo-div">
+                    <img class="logo" src="/pictures/Circle Logo.png">
+                </div>
+                <div class="form-div">
+                    <div class="form-title">
+                        <span>USER INFORMATION</span>
+                    </div>
+                    <form class="form-proper">
+                        <div class="input-box">
+                            <div class="details">Role</div>
+                            <div class="role round-border input-long" style="font-weight: bold;"> {{userType}}</div>                          
+                        </div>
+                        <div class="user-details">
+                            <div class="name">
+                                <div class="input-box">
+                                    <div class="details">First Name</div>
+                                    <div class="firstname round-border input-short">{{firstName}}</div>                                  
+                                </div>
+                                <div class="input-box">  
+                                    <div class="details">Last Name</div>                       
+                                    <div class="lastname round-border input-short">{{lastName}}</div>                                   
+                                </div>
+                            </div>
+                            <div class="input-box">
+                                <div class="details">Username</div>
+                                <div class="username round-border input-long" type="text">{{username_details}}</div>                              
+                            </div>
+                            <div class="input-box">      
+                                <div class="details">Email</div>                         
+                                <div class="email round-border input-long">{{email}}</div>                              
+                            </div>
+                            <div class="input-box">
+                                <div class="details">Address</div>
+                                <div class="address1 round-border input-long">{{completeAddress}}</div>                              
+                            <div class="location">
+                                <div class="input-box">      
+                                    <div class="details">City</div>                             
+                                    <div class="city round-border input-short">{{city}}</div>                                   
+                                </div>
+                                <div class="input-box">     
+                                    <div class="details">Postal Code</div>                              
+                                    <div class="postal round-border input-short" id="details-postal">{{postalCode}}</div>                                    
+                                </div>
+                            </div>
+                            <div>
+                                
+                            </div>
+                            <div class="input-box">    
+                                <div class="details">Phone Number</div>                            
+                                <div class="number round-border input-short">{{phoneNumber}}</div>                               
+                            </div>
+
+                            {{#if branchNameFranch}}
+                                <div class="input-box">
+                                    <div class="details">Branch</div>
+                                    <div class="branch round-border input-short">{{branchName}}</div>                                   
+                                </div>
+                            {{/if}}
+                            
+                        </div>        
+                    </form>
+                </div>
+                <div class="buttons">
+                    <a href="/edit_user/{{userId}}" style="text-decoration:none" class="edit round-border">EDIT USER</a>
+                    <a href="/edit_password/{{userId}}" id="change_pw" style="text-decoration:none" class="change_pw round-border">CHANGE PASSWORD</a>
+                </div>
+            </div>
+    </div>
+</body>
+</html>
+

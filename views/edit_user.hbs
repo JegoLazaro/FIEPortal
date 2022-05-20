@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="../css/header.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/edit_user.css">
+    <link rel="stylesheet" href="/css/popups.css">
+    <title> Edit User </title>
+</head>
+<body class="background">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript" src="/js/edit_user.js"></script>
+        <div class="backdrop" id="backdrop"></div>
+    {{>header}}
+    <div class="border_edituser">
+        <div class="logo-div">
+            <img class="logo" src="/pictures/Circle Logo.png">
+        </div>
+        <div class="form-div">
+            <div class="form-title">
+                <span>EDIT USER</span>
+            </div>
+            <form class="form-proper" id="edit-form-proper" method="POST">
+                <div class="user-details">
+                    <div class="input-box">       
+                        <div class="details">Role</div>                
+                        <div class="role round-border input-short" style="font-weight: bold;">{{userType}}</div>
+                        <input type="hidden" name="user_type" id="user_type" value="{{userType}}">
+                    </div>
+                    <div class="name">
+                        <div class="input-box">     
+                            <div class="details">First Name</div>                      
+                            <input class="firstname round-border input-short" id="edit_fName" name="edit_fName" type="text" value="{{firstName}}">                            
+                        </div>
+                        <div class="input-box">             
+                            <div class="details-lastname">Last Name</div>              
+                            <input class="lastname round-border input-short" id="edit_lName" name="edit_lName" type="text" value="{{lastName}}">                           
+                        </div>
+                    </div>
+                    <div class="input-box">
+                        <div class="details">Username</div>
+                        <input name="edit_username" id="edit_username" class="username round-border input-long" type="text" placeholder="Username" value="{{username}}">                       
+                    </div>
+                    
+                    <div class="input-box">    
+                        <div class="details">Email</div>                   
+                        <input class="email round-border input-long" id="edit_email" name="edit_email" type="email" value="{{email}}">                       
+                    </div>
+                    <div class="input-box">     
+                        <div class="details">Address</div>                   
+                        <input class="address1 round-border input-long" id="edit_address" name="edit_address" type="text" value="{{completeAddress}}">                       
+                    </div>
+                    <div class="location">
+                        <div class="input-box">     
+                            <div class="details">City</div>                      
+                            <input class="city round-border input-short" id="edit_city" name="edit_city" type="text" value="{{city}}">                       
+                        </div>
+                        <div class="input-box">   
+                            <div class="details-postal">Postal Code</div>                       
+                            <input class="postalcode round-border input-short" id="edit_postal" name="edit_postal" type="number" value="{{postalCode}}" maxlength="11" minlength="11" pattern="[0-9]{11} ">                           
+                        </div>
+                    </div>
+                    
+                    <div class="input-box">    
+                        <div class="details">Phone number</div>                    
+                        <input class="phonenumber round-border input-short" id="edit_number" name="edit_number" type="number" value="{{phoneNumber}}" maxlength="4" minlength="4" pattern="[0-9]{4}">                       
+                    </div>
+
+                    {{#if branchNameFranch}}
+                        <div class="input-box">
+                            <div class="details">Branch</div>
+                            <input name="edit_branch" id="edit_branch" class="round-border input-long" type="text" value="{{branchName}}" >
+                        </div>
+                    {{/if}}
+
+                </div>  
+            <div class="buttons">
+                <a id="confirm" class="complete round-border">COMPLETE</a>
+                <a id="cancel" style="text-decoration:none" class="cancel round-border">CANCEL</a>
+                {{#ifnoteq userType "Master Admin"}} 
+                <a id="delete" style="text-decoration:none" class="delete round-border">DELETE</a>
+                {{/ifnoteq}}
+                <!--<button class="complete round-border" type="submit" id="complete" value="complete">COMPLETE</button>-->
+                <!--<button class="cancel round-border" id="cancel" value="cancel">CANCEL</button>-->
+                <!--<button class="delete round-border" id="delete" value="delete">DELETE</button>-->
+            </div>  
+            </form>
+        </div>
+    </div>
+    {{>popup}}    
+</body>
+</html>
+

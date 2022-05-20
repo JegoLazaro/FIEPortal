@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sign in</title>
+        <link rel="stylesheet" type="text/css" href="CSS/SignIn.css">
+        
+    </head>
+    <body>
+    <div class="left-content, container" style="margin-right: auto; opacity: 20%;">
+        <img src="Pictures/empanada.png" style="margin-top: auto; max-width: 80%;">
+    </div>
+        <div class="center-content">
+            <div class="left-content">
+                <img src="Pictures/ilocos-empanada 1.png">
+            </div>
+            <div class="right-content">
+                <div>
+                    <img src="Pictures/Circle Logo.png" class="logo">
+                <div style="margin-top: 5%;">
+                    <span style="font-weight: bold; font-size: 12px; margin-left: 10px; color: red;">{{login_errors}}</span>
+                    <form class="log_in_form" method="POST">
+                        <input type="text" placeholder="Username" name="username" required>
+                        <input type="password" placeholder="Password" name="password" required>
+                        <div style="margin-top: 10%;">
+                        <button type="submit">SIGN IN</button> 
+                    </form>
+                </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

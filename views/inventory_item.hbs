@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Inventory - {{itemType}}</title>
+        <link rel="stylesheet" type="text/css" href="/css/Landing Page.css">
+        {{!-- <link rel="stylesheet" type="text/css" href="/css/SignIn.css"> --}}
+       
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"/>
+        <link rel="stylesheet" href="/css/style.css">
+	      <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+        {{!-- <script type="text/javascript" src="js/jquery-1.11.0.js"></script> --}}
+        <script type="text/javascript" src="/js/inventory_item.js"></script>
+        <body  style="overflow-y: hidden;" >
+          <div class = "wrapper">
+            {{>sidebar}}
+        <div class="main_content" style="overflow-x: auto;">
+            <div class="header">
+              <h1 class="htext">{{itemType}}</h1>
+            </div>
+            
+            <div class="info">
+                <h1 style="font-family: Comfortaa;">Inventory - {{itemType}}</h1>
+                  <div class="table-add glyphicon glyphicon-plus"><span style="font-family: Comfortaa; font-weight: bold; text-decoration:underline;">  Add Product</span></div>
+                <div id="table" class="table-editable">
+                  <table class="table" id="table">
+                    <thead style="position: sticky; top:0px">
+                      <tr>
+                        <th class="fas fa-eye" data-toggle="tooltip" data-placement="top" title=" Availability of the product "></th>
+                        <th>Product</th>
+                        <th>Item Type</th>
+                        <th>Item Price</th>
+                        <th>Beginning Value</th>
+                        <th>Delivery</th>
+                        <th>Total Start</th>
+                        <th>Total Release</th>
+                        <th>Pullout</th>
+                        <th>End</th>
+                        <th>Physical Count</th>
+                        <th>Difference</th>
+                        <th>Match</th>
+                        {{!-- _id here --}}
+                        {{#each branch}}
+                        <th class="branch {{this}}">{{this}}</th>
+                        {{/each}}
+                        <th>Notes</th>
+                        <th>Delete</th>
+                        <th>Edit</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                    {{#each item}}
+                    {{>item_row}}
+                    {{/each}}
+                    <tr class="hide">
+                      <td class="availability far fa-eye-slash"></td>
+                      <td><input class="name_input" type="text" size="20" placeholder="name" ></td>
+                      {{!-- <td><input type="text" size="15" value="{{#if notViewAll}} {{itemType}} {{else}} type {{/if}}"> </td> --}}
+                      {{!-- <td><input list="types" size="15" value="{{#if notViewAll}} {{itemType}} {{else}}{{/if}}"></td>
+                      <datalist id="types">
+                        <option value="Condiments"/>
+                        <option value="Supplies"/>
+                        <option value="Pasalubong"/>
+                        <option value="Cooking Supplies"/>
+                        <option value="Market Item"/>
+                        <option value="Drinks"/>
+                        <option value="Frozen Goods"/>
+                      </datalist> --}}
+                      <td><select>
+                        <option value="Condiments" {{#ifeq itemType "Condiments"}} selected {{/ifeq}}>Condiments</option>
+                        <option value="Supplies" {{#ifeq itemType "Supplies"}} selected {{/ifeq}}>Supplies</option>
+                        <option value="Pasalubong" {{#ifeq itemType "Pasalubong"}} selected {{/ifeq}}>Pasalubong</option>
+                        <option value="Cooking Supplies" {{#ifeq itemType 'Cooking Supplies'}} selected {{/ifeq}}>Cooking Supplies</option>
+                        <option value="Market Item" {{#ifeq itemType "Market Item"}} selected {{/ifeq}}>Market Item</option>
+                        <option value="Drinks" {{#ifeq itemType "Drinks"}} selected {{/ifeq}}>Drinks</option>
+                        <option value="Frozen Goods" {{#ifeq itemType "Frozen Goods"}} selected {{/ifeq}}>Frozen Goods</option>
+                        <option value="" selected disabled hidden>Choose here</option>
+                      </select></td>
+                      <td><input type="number" placeholder="0.00"></td> {{!-- price--}}
+                      <td><input type="number" placeholder="0"></td> {{!-- beginning value --}}
+                      <td><input type="number" placeholder="0"></td> {{!-- delivery --}}
+                      <td><input type="number" placeholder="0" readonly></td> {{!-- total start --}}
+                      <td><input type="number" placeholder="0" readonly></td> {{!-- total release --}}
+                      <td><input type="number" placeholder="0"></td> {{!-- pullout --}}
+                      <td><input type="number" placeholder="0" readonly></td> {{!-- end --}}
+                      <td><input type="number" placeholder="0"></td> {{!-- physical count --}}
+                      <td><input type="number" placeholder="0" readonly></td> {{!-- difference --}}
+                      <td><input type="text" readonly size="3" value="NO"></td>
+                      <td class="_id" style="display:none;"></td>
+                      {{#each branch}}
+                      <td><input type="number" placeholder="0"></td>
+                      {{/each}}
+                      <td><input type="text" placeholder="-"></td>
+                      <td>
+                        <span class="table-remove glyphicon glyphicon-remove"></span>
+                      </td>
+                      <td>
+                        <button class="table-edit "style="border: none;">Edit</button>
+                      </td>
+                    </tr>
+                    </tbody>
+                  </table>
+                </div>
+
+            </div>
+            </div>
+        </div>
+    </head>
+</html>

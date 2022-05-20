@@ -1,0 +1,19 @@
+{{#if availability}}  
+    <div class="product">
+            <img class="product-image" src="/pictures/Background.jpg" />
+            <h2 class="product-name">{{itemName}}</h2>
+            <h3 class="product-price">{{decimalFormat itemPrice}}</h3>
+            <!--<form id="qty-input" method="POST" style="text-align: center; margin-top: 10% border: 3px;">-->
+                 <h4 >Qty: <input class="cart-item-qty" id="order_qty"  style="text-align: center; margin-top: 10% border-style: 2px solid black;" maxlength="4" size="1" value="1" type="number" name="order_qty" required> </h4>
+                 <h5 class="">Stocks left: {{totalEnd}}</h5>
+                 <input type="hidden" class="order_id" id="order_id" name="order_id" value="{{_id}}">
+                 <input type="hidden" class="order_itemType" id="order_itemType" name="order_itemType" value="{{itemType}}">
+                 <!--<a href="{{href}}">    -->        
+                    <button id="add-btn" class="add-btn btn btn-primary">
+                            Add to Cart
+                        </button>
+                    <!--</a>-->
+            <!--</form>   -->
+    </div>
+{{/if}}
+

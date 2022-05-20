@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/Registration.css">
+    <link rel="stylesheet" href="../css/popups.css">
+    <title> Register </title>
+</head>
+
+<body class="background">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="../JS/registration.js"></script>
+    
+    {{>header}}
+    <div class="backdrop"></div>
+    <div class="page">
+        <div class="border_registration">
+            <div class="logo-div">
+                <img class="logo" src="../pictures/Circle Logo.png">
+            </div>
+            <div class="form-div">
+                <div class="form-title">
+                    <span>REGISTRATION FORM</span>
+                </div>
+                <form name="form-proper" class="form-proper">
+                    <span class="role round-border input-long"> {{userType}}</span>
+                    <input name="userType" type="hidden" id="userType" value="{{userType}}">
+                    <div class="name">
+                        <input name="firstName" id="firstName" class="firstname round-border input-short" type="text" placeholder="Firstname">
+                        <input name="lastName" id="lastName" class="lastname round-border input-short" type="text" placeholder="Lastname" >
+                    </div>
+                    <div class="username">
+                        <input name="username" id="username" class="username round-border input-long" type="text" placeholder="Username">
+                    </div>
+                    <input name="email" id="email" class="email round-border input-long" type="email" placeholder="Email Address" > 
+                    <input name="completeAddress" id="completeAddress" class="address1 round-border input-long" type="text" placeholder="Address" >
+                    <div class="location">
+                        {{#if branchNameFlag}}
+                        <input name="branchName" id="branchName" class="round-border input-short" type="text" placeholder="Branch Name" >
+                        <input name="city" id="city"  class="city round-border input-short" type="text" placeholder="City" >
+                        {{else}}
+                        <input name="city" id="city"  class="city round-border input-long" type="text" placeholder="City" >
+                        {{/if}}
+                    </div>
+                    <div class="contact">
+                        <input name="phonenumber" id="phonenumber" class="phonenumber round-border input-short" type="tel" placeholder="Phone Number" maxlength="11" minlength="11" pattern="[0-9]{11}">
+                        <input name="postalCode" id="postalCode" class="postalcode round-border input-short" type="text" placeholder="Postal Code" maxlength="4" minlength="4" pattern="[0-9]{4}">
+                    </div>
+
+            </div>
+            <div class="buttons">
+                <button class="register round-border" type="submit" id="registration" value="registration">REGISTER</button>
+                <button class="cancel round-border" id="cancel" value="cancel">CANCEL</button>
+            </div>
+            </form>
+        </div>
+    </div>
+    {{>popup}}
+    
+</body>
+
+</html>

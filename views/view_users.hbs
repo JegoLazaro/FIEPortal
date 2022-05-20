@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../../css/view_users.css">
+    <link rel="stylesheet" href="../../css/header.css">
+    <title> View Users </title>
+
+</head>
+<body class="background">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="../JS/view_users.js"></script>
+    {{>header}}
+    <div class="border-viewuser">
+        <button class="back-button" ><a href="/manage-account-view" style="text-decoration: none;"><img src="../../pictures/arrow.png"></a></button>
+        <div class="logo-div">
+            <img class="logo" src="../../pictures/Circle Logo.png">
+        </div>
+        <div class="page-title">
+            <span> {{userType}}</span>
+        </div>
+        <div class="main-page">          
+            <input class="search_border" type="text" placeholder="Search" name="search" id="search">  
+            <div class="display_user list_users">    
+                {{#each user}}
+                {{>user_row}}
+                {{/each}}
+            </div>
+        </div>
+    </div>
+</body>
+</html>

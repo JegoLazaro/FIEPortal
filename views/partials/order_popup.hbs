@@ -1,0 +1,17 @@
+<div class="notif" id="confirmpopup">
+    <div class="popup-text" id="popup-text">Are you sure you want to check out?</div>
+    <div class="buttons-popup">
+        <!--<button class="button-popup button-border" id="delete-left-button"><a href={{deleteleftButtonhref}}>{{deleteleftButtonText}}</button></a>-->
+        <a id="left-confirm-href" href="/confirm-order"><button class="button-popup button-border" id="confirm-left-button">Yes</button></a>
+        <a id="right-confirm-href"><button class="button-popup button-border" id="confirm-right-button">No</button></a>
+    </div>
+</div>
+
+<div class="notif" id="removepopup">
+    <div class="popup-text" id="popup-text">Are you sure you want to remove this item?</div>
+    <div class="buttons-popup">
+        <!--<button class="button-popup button-border" id="delete-left-button"><a href={{deleteleftButtonhref}}>{{deleteleftButtonText}}</button></a>-->
+        <a id="left-confirm-href" href="/remove-item-cart/{{item._id}}"><button class="button-popup button-border" id="remove-left-button">Yes</button></a>
+        <a id="right-confirm-href"><button class="button-popup button-border" id="remove-right-button">No</button></a>
+    </div>
+</div>

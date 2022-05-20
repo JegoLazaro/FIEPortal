@@ -1,0 +1,52 @@
+<tr>
+    <td scope="row" class="orderId">{{orderId}}</td>
+    <td>{{deliverTo}}</td>
+
+    <ul><td scope="row" >
+        {{#each itemNames}}
+            <li><b>{{this}}</b></li>
+        {{/each}}
+    </td></ul>
+    <td><ul>
+        {{#each itemQty}}
+            <li style="text-align: right;"><b>x {{this}}</b></li>
+        {{/each}}
+    </ul></td>
+    <td><ul>
+        {{#each itemPrices}}
+            <li style="text-align: right;"><b>Php {{decimalFormat this}}</b></li>
+        {{/each}}
+    </ul></td>
+    <td style="text-align: right;"><b>x {{cart.totalQty}}</b></td>
+    <td style="text-align: right;"><b>Php {{decimalFormat cart.totalPrice}}</b></td>
+    <td scope="row" class="dateOrdered">{{dateOrderedType}}</td>
+    <td scope="row" class="dateConfirmed">{{dateConfirmedType}}</td>
+    <td scope="row" class="dateReceived">{{dateReceivedType}}</td>
+    <td style="display:flex;align-items:center,justify-content:center">
+        <div class="tm-status-circle moving"></div>
+        <select disabled>
+            <option id="pending" value="Pending" class="tm-status-circle pending"
+                {{#ifeq status 'Pending'}} selected {{/ifeq}} 
+                {{#ifnoteq status 'Pending'}} disabled {{/ifnoteq}}
+                                                >Pending</option>
+            <option id="confirmed" value="Confirmed" class="tm-status-circle moving"
+            {{#ifeq status 'Confirmed'}} selected disabled {{/ifeq}}
+            {{#ifeq status 'Received'}} disabled {{/ifeq}}
+            {{#ifeq status 'Cancelled'}} disabled {{/ifeq}}
+                                                >Confirmed</option>
+            <option id="received" value="Received" class="tm-status-circle moving"
+            {{#ifeq status 'Received'}} selected  {{/ifeq}} disabled 
+                                                >Received</option>
+            <option id="cancelled" value="Cancelled" class="tm-status-circle cancelled"
+            {{#ifeq status 'Cancelled'}} selected {{/ifeq}}
+                                                >Cancelled</option>
+        </select>
+    </td>
+    <td>
+        {{#ifnoteq status 'Cancelled'}}
+            {{#ifnoteq status 'Received'}}
+            <input class="save" type="submit" name="save" value="Edit"> 
+            {{/ifnoteq}}
+        {{/ifnoteq}}
+    </td> 
+</tr>

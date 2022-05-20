@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Inventory</title>
+        <link rel="stylesheet" type="text/css" href="/css/Landing Page.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"/>
+        <link rel="stylesheet" href="/css/style.css">
+	    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+        <link rel="stylesheet" type="text/css" href="/css/Inventory.css">
+        
+    </head>
+        <body>
+        <div class = "wrapper">
+            <div class="sidebar">
+                <img src="/pictures/Circle Logo.png" class="mylogo">
+                <ul>
+                    <h2>Dashboard</h2>
+                    <li><a href="/inventory-page"><i class="fas fa-book-open"></i>Inventory</a></li>
+                    <li><a href="/total-orders/all"><i class="fas fa-shopping-basket"></i>Total Orders</a></li>
+                    <li><a href="/total-orders/Confirmed"><i class="fas fa-clipboard-check"></i>Confirmed Orders</a></li>
+                    <li><a href="/total-orders/Cancelled"><i class="fas fa-ban"></i>Cancelled Orders</a></li>
+                    <li><a href="/logout" id="logout"><i class="fas fa-sign-out-alt"></i>Log Out</a></li>
+                    <li><a href="/comm-change-pw/{{userId}}"><i class="fas fa-cog"></i>Settings</a></li>
+                </ul> 
+                <div class="social_media">
+                    <a href="https://www.facebook.com/farinasilocosempanada/photos/?ref=page_internal"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://instagram.com/farinas.ilocosempanada?utm_medium=copy_link"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        
+        <div class="main_content">
+            <div class="header">
+                   <p class="htext">Commissary<p>
+            </div>
+            
+            <div class="info">
+                <h1 style="font-family: Comfortaa; margin-left: 1.5%;">Inventory</h1>
+            <div class="row">
+                <div class="box img" style="background-image: url(/pictures/draw_condiments.jpg);"><a class="boxtext effect" href="/inventory/Condiments">Condiments</a></div>
+                <div class="box img" style="background-image: url(/pictures/supplies.jpg);"><a class="boxtext effect" href="/inventory/Supplies">Supplies</a></div>
+                <div class="box img" style="background-image: url(/pictures/pasalubong.jpg);"><a class="boxtext effect" href="/inventory/Pasalubong">Pasalubong</a></div>
+                <div class="box img" style="background-image: url(/pictures/cookingsupplies.jpg);"><a class="boxtext effect" href="/inventory/Cooking Supplies">Cooking Supplies</a></div>
+                <div class="box img" style="background-image: url(/pictures/marketitem.jpg);"><a class="boxtext effect" href="/inventory/Market Item">Market Item</a></div>
+                <div class="box img" style="background-image: url(/pictures/drinks.png);"><a class="boxtext effect" href="/inventory/Drinks">Drinks</a></div>
+                <div class="box img" style="background-image: url(/pictures/frozengoods.jpg);"><a class="boxtext effect" href="/inventory/Frozen Goods">Frozen Goods</a></div>
+                <div class="box" style="background-image: url(/pictures/viewall.jpg)"><a class="boxtext effect" href="/inventory/View all">View All</a></div>
+
+            </div>
+            </div>
+            </div>
+        </div>
+        </body>
+</html>
